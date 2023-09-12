@@ -1,11 +1,5 @@
-
-[class*="fontawesome-"]:before {
-  font-family: 'FontAwesome', sans-serif;
-}
-
-/* Define variables */
 :root {
-  --bg: #ff0000;
+  --bg: #2f23232d;
   --phoneDetails: #000000;
   --phoneColor: #11ff00;
   --phoneWidth: 320px;
