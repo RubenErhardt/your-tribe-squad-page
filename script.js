@@ -5,7 +5,7 @@ const dislike = document.querySelector('#dislike');
 
 // constants
 const urls = [
-  'https://source.unsplash.com/random/1000x1000/?sky',
+  'https://i.ibb.co/XsrH1QN/FB37-BC78-5-F61-4-A61-B980-5-BFD42-CE1727.jpg',
   'https://source.unsplash.com/random/1000x1000/?landscape',
   'https://source.unsplash.com/random/1000x1000/?ocean',
   'https://source.unsplash.com/random/1000x1000/?moutain',
