@@ -1,24 +1,39 @@
-// DOM
+// JavaScript code
 const swiper = document.querySelector('#swiper');
 const like = document.querySelector('#like');
 const dislike = document.querySelector('#dislike');
+const infobox = document.querySelector('.infobox'); // Get the infobox element
 
-// constants
-const urls = [
-  'https://i.ibb.co/XsrH1QN/FB37-BC78-5-F61-4-A61-B980-5-BFD42-CE1727.jpg',
-  'https://source.unsplash.com/random/1000x1000/?landscape',
-  'https://source.unsplash.com/random/1000x1000/?ocean',
-  'https://source.unsplash.com/random/1000x1000/?moutain',
-  'https://source.unsplash.com/random/1000x1000/?forest'
+const cardData = [
+  {
+    imageUrl: 'https://i.ibb.co/XsrH1QN/FB37-BC78-5-F61-4-A61-B980-5-BFD42-CE1727.jpg',
+    name: 'Wingsan',
+    age: 21,
+  },
+  {
+    imageUrl: 'https://i.ibb.co/ZW7tNVv/Squad1-D-Ruben.jpg',
+    name: 'Ryan',
+    age: 22,
+  },
+  {
+    imageUrl: 'https://i.ibb.co/M7P3wdj/Squad1-D-Wingsan.jpg',
+    name: 'Ruben',
+    age: 23,
+  },
+  // Add more card data here
 ];
 
-// variables
+
+
+
+
+
+
 let cardCount = 0;
 
-// functions
 function appendNewCard() {
   const card = new Card({
-    imageUrl: urls[cardCount % 5],
+    imageUrl: cardData[cardCount % cardData.length].imageUrl,
     onDismiss: appendNewCard,
     onLike: () => {
       like.style.animationPlayState = 'running';
@@ -29,6 +44,12 @@ function appendNewCard() {
       dislike.classList.toggle('trigger');
     }
   });
+
+  // Update the infobox content with the current card data
+  const currentCardData = cardData[cardCount % cardData.length];
+  infobox.querySelector('#name').textContent = `Name: ${currentCardData.name}`;
+  infobox.querySelector('#age').textContent = `Age: ${currentCardData.age}`;
+
   swiper.append(card.element);
   cardCount++;
 
@@ -38,7 +59,8 @@ function appendNewCard() {
   });
 }
 
-// first 5 cards
+// First 5 cards
 for (let i = 0; i < 5; i++) {
   appendNewCard();
 }
+
