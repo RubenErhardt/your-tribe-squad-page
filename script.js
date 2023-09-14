@@ -6,14 +6,14 @@ const infobox = document.querySelector('.infobox'); // Get the infobox element
 
 const cardData = [
   {
-    imageUrl: 'https://i.ibb.co/XsrH1QN/FB37-BC78-5-F61-4-A61-B980-5-BFD42-CE1727.jpg',
+    imageUrl: 'https://i.ibb.co/L0Myzg0/Squad1-D-Ryan.jpg',
     name: 'Wingsan',
     age: 21,
   },
   {
     imageUrl: 'https://i.ibb.co/ZW7tNVv/Squad1-D-Ruben.jpg',
     name: 'Ryan',
-    age: 22,
+    age: 19,
   },
   {
     imageUrl: 'https://i.ibb.co/M7P3wdj/Squad1-D-Wingsan.jpg',

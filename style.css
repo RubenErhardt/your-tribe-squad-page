@@ -100,3 +100,42 @@
       opacity: 1;
     }
   }
+
+  section {
+    width: auto; /* Adjust the width as needed */
+    height: 100%; /* Adjust the height as needed */
+    display: flex;
+    flex-direction: column; /* Arrange children in a column */
+    justify-content: flex-start; /* Align content to the top */
+    align-items: flex-start; /* Align content to the left */
+    position: absolute; /* Position the section */
+    top: 0; /* Align to the top */
+    left: 10px; /* Align to the left */
+    padding: 20px; /* Add padding as needed */
+    box-sizing: border-box;
+  }
+  
+  section h1 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 2px rgba(81, 78, 78, 0.5);
+    color: black;
+    margin: 0; /* Remove default margin */
+  }
+ ul li {
+    list-style: none;
+    background-color: aliceblue;
+    padding: 5px 10px;
+    margin: 7px 0px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family:'open, sans';
+ }
+  ul li.active{
+    background-color: rgb(18, 173, 18);
+  }
+
+  h1 {
+    font-size: 20px;
+  }
