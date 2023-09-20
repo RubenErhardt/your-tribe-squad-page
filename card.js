@@ -32,7 +32,7 @@ class Card {
   
     this.#listenToMouseEvents();
   }
-  
+
   #listenToMouseEvents = () => {
     this.element.addEventListener('mousedown', (e) => {
       const { clientX, clientY } = e;
@@ -68,6 +68,7 @@ class Card {
     this.#handleMove(clientX, clientY);
   }
   
+    // Methode om muis beweging omhoog te behandelen
   #handleMoveUp = () => {
     this.#startPoint = null;
     document.removeEventListener('mousemove', this.#handleMouseMove);
