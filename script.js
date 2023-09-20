@@ -1,5 +1,5 @@
 const swiper = document.querySelector('#swiper');
-const infobox = document.querySelector('.infobox'); // Get the infobox element
+const infobox = document.querySelector('.infobox'); 
 
 const cardData = [
   {
@@ -132,22 +132,24 @@ function createCard(cardData) {
   const card = new Card({
     imageUrl: cardData.imageUrl,
     onDismiss: () => {
-      card.element.style.transform = 'translateX(-300%)'; // Move the card to the left
-      card.element.style.opacity = '10'; // Make the card fade out
+      card.element.style.transform = 'translateX(-300%)'; //kaartje naar links laten gaan
+      card.element.style.opacity = '10'; // kaartje uitlaten fade 
       setTimeout(() => {
         appendNewCard();
-        card.element.style.transition = '200'; // Reset the transition
-        card.element.style.transform = '200'; // Reset the transform
+        card.element.style.transition = '200'; // resetten van de transitie 
+        card.element.style.transform = '200'; // 
         card.element.style.opacity = '100'; // Reset the opacity
-      }, 600); // Wait for the animation to finish (0.3 seconds)
+      }, 300); // wachten transistie klaar
     },
+
+    //deze code zorgt ervoor dat wanneer je liked naar een visitekaartje
     onLike: () => {
-      // Check if a link exists
+      // wanneer je lijkt kijken of er een link bestaat
       if (cardData.link) {
-        // Open the link in a new tab
+        // als er een link bestaat openen
         window.open(cardData.link, '_blank');
       }
-      appendNewCard();
+      appendNewCard(); //nieuw kaart
     },
   });
 
@@ -157,35 +159,34 @@ function createCard(cardData) {
 function appendNewCard() {
   const currentCardData = cardData[cardCount % cardData.length];
 
-  // Update the infobox content with the current card data
+  // dit zorgt voor live data van name en leeftijd
   infobox.querySelector('#name').textContent = `Naam: ${currentCardData.name}`;
   infobox.querySelector('#age').textContent = `Leeftijd: ${currentCardData.age}`;
 
-  swiper.innerHTML = ''; // Clear the swiper
 
-  // Add upcoming cards to swiper
+  //dit hele stuk zorgt ervoor dat de kaartjes netjes onder elkaar zijn en niet 20 dubbele schaduws krijgt
+  swiper.innerHTML = ''; 
+
   for (const upcomingCardData of upcomingCards) {
     swiper.append(createCard(upcomingCardData));
   }
 
-  // Add the current card to swiper
   swiper.append(createCard(currentCardData));
 
   cardCount++;
 
-  // Manage the upcoming cards stack (pop one from the beginning)
   upcomingCards.shift();
 
-  // Preload the next card
+  // dit zorgt ervoor dat je de volgende kaart kan zien
   upcomingCards.push(cardData[(cardCount + 1) % cardData.length]);
 }
 
-// Preload the initial upcoming cards
+// dit zorgt ervoor dat je de volgende kaart kan zien
 for (let i = 1; i <= 2; i++) {
   upcomingCards.push(cardData[(cardCount + i) % cardData.length]);
 }
 
-// Add 20 cards initially
+// hierdoor kan je alle kaartjes zien tot 20 kaartjes
 for (let i = 0; i < 20; i++) {
   appendNewCard();
 }
