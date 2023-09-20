@@ -53,32 +53,26 @@ const cardData = [
   {
     imageUrl: 'https://i.ibb.co/j3zLyPb/Squad1-D-Nadira.jpg',
     name: 'Nadira',
-    age: 201,
+    age: 20,
     link: 'https://naddybs.github.io/your-tribe-profile-card/',
   },
   {
     imageUrl: 'https://i.ibb.co/ZYXtBtL/Squad1-D-Jasper.jpg',
     name: 'Jasper',
-    age: 201,
+    age: 20,
     link: 'https://treppord.github.io/your-tribe-profile-card/',
   },
   {
     imageUrl: 'https://i.ibb.co/yhfTZyj/Squad1-D-Sascha.jpg',
     name: 'Sascha',
-    age: 201,
+    age: 20,
     link: 'https://saschavanvliet.github.io/your-tribe-profile-card/',
   },
   {
     imageUrl: 'https://i.ibb.co/VSq0gmL/Squad1-D-Zainab.jpg',
     name: 'Zainab',
-    age: 201,
+    age: 20,
     link: 'https://zainablfz.github.io/your-tribe-profile-card/',
-  },
-  {
-    imageUrl: 'https://i.ibb.co/ZJntKfz/Squad1-D-Koen.jpg',
-    name: 'Koen',
-    age: 18,
-    link: 'https://koeenm.github.io/your-tribe-profile-card/',
   },
   {
     imageUrl: 'https://i.ibb.co/HnfG8FS/Squad1-D-Sammy.jpg',
@@ -95,8 +89,8 @@ const cardData = [
   {
     imageUrl: 'https://i.ibb.co/PDV706m/Squad1-D-Bibek.jpg',
       name: 'Bibek',
-      age: 202,
-      link: 'https://www.example.com/bibek',
+      age: 20,
+      link: 'https://bibekma.github.io/your-tribe-profile-card/visitekaartje2/',
   },
   {
     imageUrl: 'https://i.ibb.co/6W4WKS3/Squad1-D-Eva.jpg',
@@ -107,44 +101,26 @@ const cardData = [
   {
     imageUrl: 'https://i.ibb.co/Lp6GDfw/Squad1-D-Jesse.jpg',
       name: 'Jesse',
-      age: 201,
-      link: 'https://www.example.com/jesse',
+      age: 20,
+      link: 'https://j3ss3hva.github.io/your-tribe-profile-card/',
   },
   {
     imageUrl: 'https://i.ibb.co/mDfCF46/Squad1-D-Lesley.jpg',
       name: 'Lesley',
-      age: 201,
-      link: 'https://www.example.com/lesley',
-  },
-  {
-    imageUrl: 'https://i.ibb.co/GTCd5bN/Squad1-D-Luna.jpg',
-      name: 'Luna',
-      age: 201,
-      link: 'https://www.example.com/luna',
+      age: 20,
+      link: 'https://oniwiththehoodie.github.io/your-tribe-profile-card/',
   },
   {
     imageUrl: 'https://i.ibb.co/jvfdgzC/Squad1-D-Niels.jpg',
       name: 'Niels',
-      age: 201,
-      link: 'https://www.example.com/niels',
+      age: 19,
+      link: 'https://nielsmaas03.github.io/your-tribe-profile-card/',
   },
   {
     imageUrl: 'https://i.ibb.co/TbYmj4Q/Squad1-D-Pom.jpg',
       name: 'Pom',
-      age: 201,
-      link: 'https://www.example.com/pom',
-  },
-  {
-    imageUrl: '',
-      name: 'Nadir',
-      age: 201,
-      link: 'https://nadirelm.github.io/your-tribe-profile-card/',
-  },
-  {
-    imageUrl: '',
-      name: 'Mirac',
-      age: 201,
-      link: 'https://miracc38.github.io/your-tribe-profile-card/',
+      age: 23,
+      link: 'https://pommelienn.github.io/your-tribe-profile-card/',
   },
   
 ];
