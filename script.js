@@ -153,7 +153,6 @@ function createCard(cardData) {
         card.element.style.opacity = '100'; // Reset the opacity
       }, 300); // wachten transistie klaar
       // cardCount wordt alleen verhoogd als de kaart wordt afgewezen
-      cardCount++;
     },
     
 
