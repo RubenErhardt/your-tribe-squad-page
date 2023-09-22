@@ -146,13 +146,13 @@ function createCard(cardData) {
       card.element.style.transform = 'translateX(-300%)'; // kaartje naar links laten gaan
       card.element.style.opacity = '10'; // kaartje uitlaten fade 
       setTimeout(() => {
-        cardCount++;
         appendNewCard();
         card.element.style.transition = '200'; // resetten van de transitie 
         card.element.style.transform = '200'; // 
         card.element.style.opacity = '100'; // Reset the opacity
       }, 300); // wachten transistie klaar
       // cardCount wordt alleen verhoogd als de kaart wordt afgewezen
+      cardCount++;
     },
     
 
