@@ -15,7 +15,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background: linear-gradient(0deg, rgb(0, 208, 255), rgb(8, 0, 255));
+    background: linear-gradient(0deg, rgb(0, 255, 149), rgb(0, 196, 255));
   }
   
   #swiper {
