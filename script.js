@@ -124,7 +124,6 @@ const cardData = [
   },
   
 ];
-// Shuffle function to randomize the card order
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -134,7 +133,7 @@ function shuffleArray(array) {
   
   // Shuffle the cardData array before creating and displaying the cards
   shuffleArray(cardData);
-  
+
 let cardCount = 0;
 const upcomingCards = [];
 
@@ -166,7 +165,7 @@ function createCard(cardData) {
         window.open(cardData.link, '_blank');
       }
 
-      cardCount++;
+      
       appendNewCard(); //nieuw kaart
     },
   });
@@ -180,7 +179,7 @@ function appendNewCard() {
   // dit zorgt voor live data van name en leeftijd
   infobox.querySelector('#name').textContent = `Naam: ${currentCardData.name}`;
   infobox.querySelector('#age').textContent = `Leeftijd: ${currentCardData.age}`;
-
+  
 
   //dit hele stuk zorgt ervoor dat de kaartjes netjes onder elkaar zijn en niet 20 dubbele schaduws krijgt
   swiper.innerHTML = ''; 
